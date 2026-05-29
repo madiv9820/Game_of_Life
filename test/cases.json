@@ -1,0 +1,76 @@
+[
+  {
+    "title": "Single Cell Isolation",
+    "description": "🎯 Tests the absolute minimum grid size; a single cell dies immediately from underpopulation.",
+    "input": [
+      [1]
+    ],
+    "output": [
+      [0]
+    ]
+  },
+  {
+    "title": "The Block (Still Life)",
+    "description": "🧱 A classic stable pattern where every cell has exactly 3 neighbors, causing the grid to remain completely unchanged.",
+    "input": [
+      [0, 0, 0, 0],
+      [0, 1, 1, 0],
+      [0, 1, 1, 0],
+      [0, 0, 0, 0]
+    ],
+    "output": [
+      [0, 0, 0, 0],
+      [0, 1, 1, 0],
+      [0, 1, 1, 0],
+      [0, 0, 0, 0]
+    ]
+  },
+  {
+    "title": "The Blinker (Oscillator)",
+    "description": "🔄 A famous rotating pattern that flips from a horizontal line to a vertical line due to simultaneous death and reproduction.",
+    "input": [
+      [0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0],
+      [0, 1, 1, 1, 0],
+      [0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0]
+    ],
+    "output": [
+      [0, 0, 0, 0, 0],
+      [0, 0, 1, 0, 0],
+      [0, 0, 1, 0, 0],
+      [0, 0, 1, 0, 0],
+      [0, 0, 0, 0, 0]
+    ]
+  },
+  {
+    "title": "Overpopulation & Corner Reproduction",
+    "description": "💥 Tests rule collision: the center cell gets crushed by overpopulation, while all four empty corners spring to life.",
+    "input": [
+      [0, 1, 0],
+      [1, 1, 1],
+      [0, 1, 0]
+    ],
+    "output": [
+      [1, 1, 1],
+      [1, 0, 1],
+      [1, 1, 1]
+    ]
+  },
+  {
+    "title": "The Glider Phase 1",
+    "description": "🛸 Tests a complex asymmetrical structure that evaluates all 4 rules simultaneously to crawl diagonally across the grid.",
+    "input": [
+      [0, 1, 0, 0],
+      [0, 0, 1, 0],
+      [1, 1, 1, 0],
+      [0, 0, 0, 0]
+    ],
+    "output": [
+      [0, 0, 0, 0],
+      [1, 0, 1, 0],
+      [0, 1, 1, 0],
+      [0, 1, 0, 0]
+    ]
+  }
+]
